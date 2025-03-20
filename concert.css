@@ -293,3 +293,154 @@ footer {
     background-color: #ff0000;
     color: #000;
 }
+
+/* Медиа-запросы для мобильных устройств (страница концертов) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        margin: 10px 0;
+    }
+
+    .menu-item a {
+        font-size: 1.1em;
+        padding: 8px 15px;
+        border: 2px solid transparent;
+    }
+
+    .menu-item a:hover {
+        border-color: #ff0000;
+    }
+
+    .logo {
+        margin-top: 15px;
+        position: static;
+        transform: none;
+    }
+
+    .logo h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .concerts-page {
+        padding: 20px;
+        margin: 15px auto;
+    }
+
+    .page-title {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .concert-list {
+        grid-template-columns: 1fr; /* Переключаемся на одну колонку */
+        gap: 20px;
+    }
+
+    .concert-item {
+        padding: 15px;
+    }
+
+    .concert-date {
+        width: 60px;
+        padding: 10px 8px;
+        margin-right: 15px;
+    }
+
+    .concert-date .day {
+        font-size: 1.8em;
+    }
+
+    .concert-info h3 {
+        font-size: 1.3em;
+    }
+
+    .concert-info p {
+        font-size: 0.95em;
+    }
+
+    .ticket-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .video-container {
+        margin-bottom: 15px;
+    }
+
+    .photo-gallery {
+        width: 80%; /* Уменьшаем ширину галереи на мобилках */
+        margin: 30px auto;
+    }
+
+    .carousel-controls {
+        padding: 0 10px;
+    }
+
+    .carousel-controls button {
+        font-size: 1.5em;
+        padding: 8px 15px;
+    }
+
+    footer {
+        position: static;
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+/* Для совсем маленьких экранов (смартфонов) */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.8em;
+    }
+
+    .menu-item a {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+
+    .page-title {
+        font-size: 1.6em;
+        margin-bottom: 25px;
+    }
+
+    .concert-date {
+        width: 50px;
+        padding: 8px 6px;
+        margin-right: 10px;
+    }
+
+    .concert-date .day {
+        font-size: 1.5em;
+    }
+
+}
+
+
+.carousel-controls button:hover {
+    background-color: #ff0000;
+    color: #000;
+}
