@@ -1,0 +1,151 @@
+.nosifer-regular {
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rubik-marker-hatch-regular {
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .amatic-sc-regular {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .amatic-sc-bold {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+body {
+    font-family: sans-serif;
+    background-color: #111;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center; /* Центрируем меню */
+    display: flex; /* Используем flexbox для упорядочивания элементов */
+    flex-direction: column; /* Размещаем элементы в колонку */
+    align-items: center; /* Центрируем элементы по горизонтали */
+}
+
+.main-nav {
+    margin-bottom: 20px;
+    width: 100%; /* Занимает всю ширину хедера */
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Центрируем пункты меню */
+    font-family: "Rubik Marker Hatch", sans-serif;
+}
+
+.menu-item {
+    margin: 0 20px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+}
+
+.menu-item a:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+    border-color: #ff0000;
+}
+
+.logo {
+    margin-top: 20px; /* Добавляем отступ сверху от меню */
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    color: #ff0000;
+    text-shadow: 2px 2px #000000;
+    animation: pulse 2s infinite alternate;
+    font-family: "Nosifer", sans-serif;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+.content-section {
+    padding: 40px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #1a1a1a;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Amatic SC", sans-serif;
+    font-size: 170%;
+}
+
+.content-section h2 {
+    color: #ff0000;
+    margin-top: 0;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+}
+
+.content-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.music-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.spotify-link, .youtube-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.spotify-link:hover, .youtube-link:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: #888;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
