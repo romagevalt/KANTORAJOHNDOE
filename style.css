@@ -149,3 +149,103 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        flex-direction: column; /* Переводим элементы хедера в колонку */
+        align-items: center; /* Центрируем элементы хедера */
+    }
+
+    .main-nav {
+        margin-bottom: 15px;
+        width: 100%; /* Меню на всю ширину */
+    }
+
+    .menu {
+        flex-direction: column; /* Пункты меню в столбик */
+        align-items: center; /* Центрируем пункты меню */
+    }
+
+    .menu-item {
+        margin: 10px 0; /* Отступы сверху и снизу для пунктов меню */
+    }
+
+    .menu-item a {
+        font-size: 1.1em;
+        padding: 8px 15px;
+        border: 2px solid transparent; /* Убираем бордер по умолчанию на мобилках */
+    }
+
+    .menu-item a:hover {
+        border-color: #ff0000; /* Возвращаем бордер при наведении (если оно вообще есть на тачскрине) */
+    }
+
+    .logo {
+        margin-top: 15px;
+        position: static; /* Убираем абсолютное позиционирование */
+        transform: none; /* Убираем трансформацию */
+    }
+
+    .logo h1 {
+        font-size: 2em;
+        text-align: center; /* Центрируем логотип */
+    }
+
+    .content-section {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .content-section h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        padding-bottom: 8px;
+    }
+
+    .music-links {
+        flex-direction: column; /* Ссылки на музыку в столбик */
+        align-items: center; /* Центрируем ссылки */
+        gap: 10px;
+    }
+
+    .spotify-link, .youtube-link {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    footer {
+        position: static; /* Подвал в конце контента на мобилках */
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+/* Для совсем маленьких экранов (смартфонов) */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.8em;
+    }
+
+    .menu-item a {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+
+    .content-section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .content-section p {
+        font-size: 0.95em;
+    }
+
+    .content-section ul {
+        padding-left: 15px;
+    }
+
+    .spotify-link, .youtube-link {
+        padding: 10px 20px;
+    }
+}
