@@ -1,0 +1,181 @@
+.nosifer-regular {
+    font-family: "Nosifeer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rubik-marker-hatch-regular {
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .amatic-sc-regular {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .amatic-sc-bold {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+/* Стили для страницы блога */
+body {
+    font-family: "Nosifeer", sans-serif;
+    background-color: #000;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.blog-page {
+    padding: 40px;
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+.blog-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-title {
+    color: #ff0000;
+    font-size: 2.5em;
+    text-shadow: 1px 1px #000;
+    animation: titleDrop 1s ease-out;
+}
+
+@keyframes titleDrop {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.blog-posts {
+    margin-bottom: 60px;
+}
+
+.blog-post {
+    background-color: #1a1a1a;
+    border: 2px solid #333;
+    border-left: 5px solid #ff0000;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 #000;
+}
+
+.post-title {
+    color: #ddd;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #000;
+}
+
+.post-date {
+    display: block;
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.post-image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    border: 2px solid #333;
+    box-shadow: 3px 3px 0 #000;
+    border-radius: 5px;
+}
+
+.post-content {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.post-content a {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.social-links-bottom {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 2px dashed #555;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 2em;
+    color: #ddd;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon.spotify:hover {
+    color: #1ed760; /* Зеленый Spotify */
+    transform: scale(1.1);
+}
+
+.social-icon.youtube:hover {
+    color: #ff0000; /* Красный YouTube */
+    transform: scale(1.1);
+}
+
+.social-icon.soundcloud:hover {
+    color: #ff7700; /* Оранжевый SoundCloud */
+    transform: scale(1.1);
+}
+
+/* Адаптивность для блога на мобилках */
+@media (max-width: 768px) {
+    .blog-page {
+        padding: 20px;
+        margin: 15px auto;
+    }
+
+    .page-title {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .post-title {
+        font-size: 1.6em;
+    }
+
+    .post-image {
+        max-width: 100%;
+    }
+
+    .social-icon {
+        font-size: 1.8em;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 1.8em;
+    }
+
+    .post-title {
+        font-size: 1.4em;
+    }
+
+    .social-icon {
+        font-size: 1.5em;
+    }
+}
