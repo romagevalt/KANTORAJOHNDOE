@@ -121,7 +121,19 @@ header {
     justify-content: center;
 }
 
-.spotify-link, .youtube-link {
+.spotify-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ff22;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+
+.youtube-link {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ff0000;
@@ -134,6 +146,34 @@ header {
 .spotify-link:hover, .youtube-link:hover {
     background-color: #cc0000;
     transform: scale(1.05);
+}
+
+.spotify-link i, .youtube-link i {
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+    font-size: 1.2em; /* Можно немного увеличить размер иконок */
+    vertical-align: middle; /* Выравниваем иконку по центру текста по вертикали */
+}
+
+
+.soundcloud-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7700; /* Примерный цвет SoundCloud */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.soundcloud-link:hover {
+    background-color: #cc0000; /* Немного темнее при наведении */
+    transform: scale(1.05);
+}
+
+.soundcloud-link i {
+    margin-right: 10px;
+    font-size: 1.2em;
+    vertical-align: middle;
 }
 
 footer {
