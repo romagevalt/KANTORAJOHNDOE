@@ -386,23 +386,7 @@ footer {
         padding-bottom: 10px;
     }
 
-    .video-container {
-        margin-bottom: 15px;
-    }
 
-    .photo-gallery {
-        width: 80%; /* Уменьшаем ширину галереи на мобилках */
-        margin: 30px auto;
-    }
-
-    .carousel-controls {
-        padding: 0 10px;
-    }
-
-    .carousel-controls button {
-        font-size: 1.5em;
-        padding: 8px 15px;
-    }
 
     footer {
         position: static;
