@@ -438,9 +438,3 @@ footer {
     }
 
 }
-
-
-.carousel-controls button:hover {
-    background-color: #ff0000;
-    color: #000;
-}
