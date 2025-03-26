@@ -61,6 +61,19 @@
             </div>
     </section>
 
+ <section class="phts">
+        <h1>ПРОШЛЫЕ УГАРЫ!</h1>
+        <div class="slideshow-container">
+            <img class="slide" src="image/1.jpg" alt="Slide 1">
+            <img class="slide" src="image/2.jpg" alt="Slide 2">
+            <img class="slide" src="image/3.jpg" alt="Slide 3">
+            <img class="slide" src="image/4.jpg" alt="Slide 4">
+            <img class="slide" src="image/5.jpg" alt="Slide 5">
+            <img class="slide" src="image/6.jpg" alt="Slide 6">
+          </div>
+
+    </section>
+    
     <section id="music" class="content-section">
         <h2>Наше музло, ебать его в сраку!</h2>
         <div class="music-links">
@@ -81,8 +94,27 @@
     </footer>
 
     <script>
-        // Тут можешь добавить свой ебанутый JavaScript для анимаций
-        // Например, при наведении на пункты меню или на логотип
+       document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.slide');
+  let currentIndex = 0;
+
+  // Показываем первый слайд при загрузке страницы
+  slides[currentIndex].classList.add('active');
+
+  function nextSlide() {
+    // Убираем класс active с текущего слайда
+    slides[currentIndex].classList.remove('active');
+
+    // Переходим к следующему слайду
+    currentIndex = (currentIndex + 1) % slides.length;
+
+    // Добавляем класс active следующему слайду
+    slides[currentIndex].classList.add('active');
+  }
+
+  // Запускаем интервал для смены слайдов каждые 2 секунды (2000 миллисекунд)
+  setInterval(nextSlide, 2000);
+});
     </script>
 </body>
 </html>
